@@ -3,7 +3,7 @@
 //  QuickCure1
 //
 //  Created by maoge on 16/10/30.
-//  Copyright © 2016年 haoge. All rights reserved.
+//  Copyright © 2016年 maoge. All rights reserved.
 //
 
 #import "NetWorkTool.h"
@@ -57,13 +57,13 @@
 }
 
 
-//- (BOOL)isReachableByAFN{
-//    
-//    Reachability *reachability = [Reachability reachabilityWithHostName:CZ_BaseUrl];
-//    
-//   return reachability.isReachable;
-//
-//} 
+- (BOOL)isReachableByAFN{
+    
+    Reachability *reachability = [Reachability reachabilityWithHostName:kBaseUrl];
+    
+   return reachability.isReachable;
+
+} 
 
 
 /** 自定义的 POST 请求 */

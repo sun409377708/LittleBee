@@ -3,56 +3,51 @@
 //  QuickCure1
 //
 //  Created by maoge on 16/10/30.
-//  Copyright © 2016年 haoge. All rights reserved.
+//  Copyright © 2016年 maoge. All rights reserved.
 //
 
 #ifndef NetWorkDefine_h
 #define NetWorkDefine_h
 
 /** 基Url */
-#define CZ_BaseUrl @"http://iosapi.itcast.cn"
+#define kBaseUrl @"http://iosapi.itcast.cn/loveBeen"
 
-/** 登录接口 */
-#define kLoginUrl @"http://iosapi.itcast.cn/carelinkQuickLogin.json.php"
+/** 获取首页数据 */
+#define kHomePageUrl @"http://iosapi.itcast.cn/loveBeen/focus.json.php"
 
-/** 首页轮播器接口 */
-#define kBannersUrl @"http://iosapi.itcast.cn/banners.json.php"
+/** 首页新鲜热卖数据 */
+#define kFreshHotSaleUrl @"http://iosapi.itcast.cn/loveBeen/firstSell.json.php"
 
-/** 肿瘤疾病选择疾病细分列表接口 */
-#define kSearchCI3Url @"http://iosapi.itcast.cn/searchCI3List.json.php"
+/** 启动广告数据 */
+#define kAdvertisementUrl @"http://iosapi.itcast.cn/loveBeen/ad.json.php"
 
-/** 根据疾病得到医生数量接口 */
-#define kMatchedDoctorCountUrl @"http://iosapi.itcast.cn/matchedDoctorCount.json.php"
+/** 闪电超市数据接口 */
+#define kSuperMarketUrl @"http://iosapi.itcast.cn/loveBeen/supermarket.json.php"
 
-/** 选择并发症列表接口 */
-#define kComplicationListUrl @"http://iosapi.itcast.cn/complicationList.json.php"
+/** 搜索最新关键词接口 */
+#define kSearchNewKeyworkUrl @"http://iosapi.itcast.cn/loveBeen/search.json.php"
 
-/** 获取医生列表接口 */
-#define kMatchDoctors @"http://iosapi.itcast.cn/matchDoctors.json.php"
+/** 返回搜索结果接口 */
+#define kMpromotionResultUrl @"http://iosapi.itcast.cn/loveBeen/promotion.json.php"
 
-/** 获取医生基本信息接口 */
-#define kGetDoctorInfoUrl @"http://iosapi.itcast.cn/getDoctorInfo.json.php"
+/** 获取我的订单信息接口 */
+#define kMyOrdersUrl @"http://iosapi.itcast.cn/loveBeen/MyOrders.json.php"
 
-/** 匹配到医生后，查看医生接诊条件 */
-#define kDoctorReceivingSetting @"http://iosapi.itcast.cn/doctorReceivingSetting.json.php"
+/** 获取我的优惠券信息接口 */
+#define kMyCouponsUrl @"http://iosapi.itcast.cn/loveBeen/MyCoupon.json.php"
 
-/** 医生简介接口 */
-#define kGetIntroductionUrl @"http://iosapi.itcast.cn/getIntroduction.json.php"
+/** 获取系统消息接口 */
+#define kGetSystemMessageUrl @"http://iosapi.itcast.cn/loveBeen/SystemMessage.json.php"
 
-/** 获取医生就诊时间接口 */
-#define kDoctorDuties @"http://iosapi.itcast.cn/doctorDuties.json.php"
+/** 获取我的消息接口 */
+#define kUserMessageUrl @"http://iosapi.itcast.cn/loveBeen/UserMessage.json.php"
+
+/** 获取我的收获地址列表 */
+#define kMyAddressUrl @"http://iosapi.itcast.cn/loveBeen/MyAdress.json.php"
+
 
 /** 百度天气 */
 #define kBDWeather_KEY @"17IvzuqmKrK1cGwNL6VQebF9"
 #define kGetWeather_URL(city) ([NSString stringWithFormat: @"http://api.map.baidu.com/telematics/v3/weather?location=%@&output=json&ak=%@", city, kBDWeather_KEY])
-
-/** 关注医生接口 */
-#define kAddDoctorUrl @"http://iosapi.itcast.cn/addDoctor.json.php"
-
-/** 取消关注医生接口 */
-#define kDeleteDoctorUrl @"http://iosapi.itcast.cn/deleteDoctor.json.php"
-
-/** 获取关注医生列表接口 */
-#define kDoctorListUrl  @"http://iosapi.itcast.cn/doctorList.json.php"
 
 #endif /* NetWorkDefine_h */
