@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77653AD91E05250200BB4F68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653AD81E05250200BB4F68 /* main.m */; };
+		77653ADC1E05250200BB4F68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653ADB1E05250200BB4F68 /* AppDelegate.m */; };
+		77653ADF1E05250200BB4F68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653ADE1E05250200BB4F68 /* ViewController.m */; };
+		77653AE21E05250200BB4F68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77653AE01E05250200BB4F68 /* Main.storyboard */; };
+		77653AE41E05250200BB4F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77653AE31E05250200BB4F68 /* Assets.xcassets */; };
+		77653AE71E05250200BB4F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77653AE51E05250200BB4F68 /* LaunchScreen.storyboard */; };
+		77653B181E05272200BB4F68 /* NotificationDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653AF21E05272200BB4F68 /* NotificationDefine.m */; };
+		77653B191E05272200BB4F68 /* province.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77653AF61E05272200BB4F68 /* province.plist */; };
+		77653B241E05272200BB4F68 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B111E05272200BB4F68 /* NetWorkManager.m */; };
+		77653B251E05272200BB4F68 /* NetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B131E05272200BB4F68 /* NetWorkTool.m */; };
+		77653B261E05272200BB4F68 /* ProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B161E05272200BB4F68 /* ProgressManager.m */; };
+		77653B481E05278000BB4F68 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B2A1E05278000BB4F68 /* NSArray+Log.m */; };
+		77653B491E05278000BB4F68 /* NSAttributedString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B2C1E05278000BB4F68 /* NSAttributedString+Extension.m */; };
+		77653B4A1E05278000BB4F68 /* NSObject+JQRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B2E1E05278000BB4F68 /* NSObject+JQRuntime.m */; };
+		77653B4B1E05278000BB4F68 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B301E05278000BB4F68 /* NSString+Base64.m */; };
+		77653B4C1E05278000BB4F68 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B321E05278000BB4F68 /* NSString+Hash.m */; };
+		77653B4D1E05278000BB4F68 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B341E05278000BB4F68 /* NSString+Path.m */; };
+		77653B4E1E05278000BB4F68 /* NSString+Substring.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B361E05278000BB4F68 /* NSString+Substring.m */; };
+		77653B4F1E05278000BB4F68 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B381E05278000BB4F68 /* UIColor+Addition.m */; };
+		77653B501E05278000BB4F68 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B3A1E05278000BB4F68 /* UIImage+Extension.m */; };
+		77653B511E05278000BB4F68 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B3C1E05278000BB4F68 /* UIImage+Tint.m */; };
+		77653B521E05278000BB4F68 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B3E1E05278000BB4F68 /* UILabel+Extension.m */; };
+		77653B531E05278000BB4F68 /* UIView+WP.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B401E05278000BB4F68 /* UIView+WP.m */; };
+		77653B541E05278000BB4F68 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B431E05278000BB4F68 /* NSObject+CZRuntime.m */; };
+		77653B551E05278000BB4F68 /* NSString+pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B451E05278000BB4F68 /* NSString+pinyin.m */; };
+		77653B561E05278000BB4F68 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B471E05278000BB4F68 /* Utils.m */; };
+		81171F236FB88B5F9D3D40A8 /* libPods-LittleBee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B009E26CD8C10F760773E623 /* libPods-LittleBee.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12EAF82B89FAA7F349A9CCB9 /* Pods-LittleBee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleBee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LittleBee/Pods-LittleBee.debug.xcconfig"; sourceTree = "<group>"; };
+		414A76B7EB06D958658A3DCD /* Pods-LittleBee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleBee.release.xcconfig"; path = "Pods/Target Support Files/Pods-LittleBee/Pods-LittleBee.release.xcconfig"; sourceTree = "<group>"; };
+		77653AD41E05250200BB4F68 /* LittleBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77653AD81E05250200BB4F68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77653ADA1E05250200BB4F68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77653ADB1E05250200BB4F68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77653ADD1E05250200BB4F68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		77653ADE1E05250200BB4F68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		77653AE11E05250200BB4F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77653AE31E05250200BB4F68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77653AE61E05250200BB4F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77653AE81E05250200BB4F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77653AF01E05272200BB4F68 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		77653AF11E05272200BB4F68 /* NotificationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationDefine.h; sourceTree = "<group>"; };
+		77653AF21E05272200BB4F68 /* NotificationDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationDefine.m; sourceTree = "<group>"; };
+		77653AF61E05272200BB4F68 /* province.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = province.plist; sourceTree = "<group>"; };
+		77653B0F1E05272200BB4F68 /* NetWorkDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkDefine.h; sourceTree = "<group>"; };
+		77653B101E05272200BB4F68 /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		77653B111E05272200BB4F68 /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		77653B121E05272200BB4F68 /* NetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTool.h; sourceTree = "<group>"; };
+		77653B131E05272200BB4F68 /* NetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTool.m; sourceTree = "<group>"; };
+		77653B151E05272200BB4F68 /* ProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressManager.h; sourceTree = "<group>"; };
+		77653B161E05272200BB4F68 /* ProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressManager.m; sourceTree = "<group>"; };
+		77653B281E05278000BB4F68 /* KYAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAdditions.h; sourceTree = "<group>"; };
+		77653B291E05278000BB4F68 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		77653B2A1E05278000BB4F68 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		77653B2B1E05278000BB4F68 /* NSAttributedString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Extension.h"; sourceTree = "<group>"; };
+		77653B2C1E05278000BB4F68 /* NSAttributedString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Extension.m"; sourceTree = "<group>"; };
+		77653B2D1E05278000BB4F68 /* NSObject+JQRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JQRuntime.h"; sourceTree = "<group>"; };
+		77653B2E1E05278000BB4F68 /* NSObject+JQRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JQRuntime.m"; sourceTree = "<group>"; };
+		77653B2F1E05278000BB4F68 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		77653B301E05278000BB4F68 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		77653B311E05278000BB4F68 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		77653B321E05278000BB4F68 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		77653B331E05278000BB4F68 /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Path.h"; sourceTree = "<group>"; };
+		77653B341E05278000BB4F68 /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Path.m"; sourceTree = "<group>"; };
+		77653B351E05278000BB4F68 /* NSString+Substring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Substring.h"; sourceTree = "<group>"; };
+		77653B361E05278000BB4F68 /* NSString+Substring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Substring.m"; sourceTree = "<group>"; };
+		77653B371E05278000BB4F68 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		77653B381E05278000BB4F68 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		77653B391E05278000BB4F68 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		77653B3A1E05278000BB4F68 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		77653B3B1E05278000BB4F68 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		77653B3C1E05278000BB4F68 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		77653B3D1E05278000BB4F68 /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		77653B3E1E05278000BB4F68 /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		77653B3F1E05278000BB4F68 /* UIView+WP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WP.h"; sourceTree = "<group>"; };
+		77653B401E05278000BB4F68 /* UIView+WP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WP.m"; sourceTree = "<group>"; };
+		77653B421E05278000BB4F68 /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		77653B431E05278000BB4F68 /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		77653B441E05278000BB4F68 /* NSString+pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+pinyin.h"; sourceTree = "<group>"; };
+		77653B451E05278000BB4F68 /* NSString+pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+pinyin.m"; sourceTree = "<group>"; };
+		77653B461E05278000BB4F68 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		77653B471E05278000BB4F68 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		77653B571E0527A300BB4F68 /* Little-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Little-PrefixHeader.pch"; sourceTree = "<group>"; };
+		B009E26CD8C10F760773E623 /* libPods-LittleBee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LittleBee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77653AD11E05250200BB4F68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81171F236FB88B5F9D3D40A8 /* libPods-LittleBee.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77653ACB1E05250200BB4F68 = {
+			isa = PBXGroup;
+			children = (
+				77653AD61E05250200BB4F68 /* LittleBee */,
+				77653AD51E05250200BB4F68 /* Products */,
+				A2BBDEF8286A8DA6EF08FCBC /* Pods */,
+				C58F3ADC576CA74330BCBB57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77653AD51E05250200BB4F68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77653AD41E05250200BB4F68 /* LittleBee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77653AD61E05250200BB4F68 /* LittleBee */ = {
+			isa = PBXGroup;
+			children = (
+				77653ADA1E05250200BB4F68 /* AppDelegate.h */,
+				77653ADB1E05250200BB4F68 /* AppDelegate.m */,
+				77653ADD1E05250200BB4F68 /* ViewController.h */,
+				77653ADE1E05250200BB4F68 /* ViewController.m */,
+				77653AE01E05250200BB4F68 /* Main.storyboard */,
+				77653AE31E05250200BB4F68 /* Assets.xcassets */,
+				77653AE51E05250200BB4F68 /* LaunchScreen.storyboard */,
+				77653AE81E05250200BB4F68 /* Info.plist */,
+				77653AEE1E05272200BB4F68 /* Classes */,
+				77653AD71E05250200BB4F68 /* Supporting Files */,
+				77653B571E0527A300BB4F68 /* Little-PrefixHeader.pch */,
+			);
+			path = LittleBee;
+			sourceTree = "<group>";
+		};
+		77653AD71E05250200BB4F68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77653AD81E05250200BB4F68 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77653AEE1E05272200BB4F68 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				77653AF31E05272200BB4F68 /* Controllers */,
+				77653AF41E05272200BB4F68 /* Models */,
+				77653B171E05272200BB4F68 /* Views */,
+				77653AEF1E05272200BB4F68 /* Common */,
+				77653AF51E05272200BB4F68 /* Resources */,
+				77653AF71E05272200BB4F68 /* Unities */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		77653AEF1E05272200BB4F68 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				77653AF01E05272200BB4F68 /* CommonDefine.h */,
+				77653AF11E05272200BB4F68 /* NotificationDefine.h */,
+				77653AF21E05272200BB4F68 /* NotificationDefine.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		77653AF31E05272200BB4F68 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		77653AF41E05272200BB4F68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		77653AF51E05272200BB4F68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77653AF61E05272200BB4F68 /* province.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77653AF71E05272200BB4F68 /* Unities */ = {
+			isa = PBXGroup;
+			children = (
+				77653B271E05278000BB4F68 /* Categories */,
+				77653B0E1E05272200BB4F68 /* NetworksTools(网络工具) */,
+				77653B141E05272200BB4F68 /* ProgressHUD */,
+			);
+			path = Unities;
+			sourceTree = "<group>";
+		};
+		77653B0E1E05272200BB4F68 /* NetworksTools(网络工具) */ = {
+			isa = PBXGroup;
+			children = (
+				77653B0F1E05272200BB4F68 /* NetWorkDefine.h */,
+				77653B101E05272200BB4F68 /* NetWorkManager.h */,
+				77653B111E05272200BB4F68 /* NetWorkManager.m */,
+				77653B121E05272200BB4F68 /* NetWorkTool.h */,
+				77653B131E05272200BB4F68 /* NetWorkTool.m */,
+			);
+			path = "NetworksTools(网络工具)";
+			sourceTree = "<group>";
+		};
+		77653B141E05272200BB4F68 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				77653B151E05272200BB4F68 /* ProgressManager.h */,
+				77653B161E05272200BB4F68 /* ProgressManager.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		77653B171E05272200BB4F68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77653B271E05278000BB4F68 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				77653B281E05278000BB4F68 /* KYAdditions.h */,
+				77653B291E05278000BB4F68 /* NSArray+Log.h */,
+				77653B2A1E05278000BB4F68 /* NSArray+Log.m */,
+				77653B2B1E05278000BB4F68 /* NSAttributedString+Extension.h */,
+				77653B2C1E05278000BB4F68 /* NSAttributedString+Extension.m */,
+				77653B2D1E05278000BB4F68 /* NSObject+JQRuntime.h */,
+				77653B2E1E05278000BB4F68 /* NSObject+JQRuntime.m */,
+				77653B2F1E05278000BB4F68 /* NSString+Base64.h */,
+				77653B301E05278000BB4F68 /* NSString+Base64.m */,
+				77653B311E05278000BB4F68 /* NSString+Hash.h */,
+				77653B321E05278000BB4F68 /* NSString+Hash.m */,
+				77653B331E05278000BB4F68 /* NSString+Path.h */,
+				77653B341E05278000BB4F68 /* NSString+Path.m */,
+				77653B351E05278000BB4F68 /* NSString+Substring.h */,
+				77653B361E05278000BB4F68 /* NSString+Substring.m */,
+				77653B371E05278000BB4F68 /* UIColor+Addition.h */,
+				77653B381E05278000BB4F68 /* UIColor+Addition.m */,
+				77653B391E05278000BB4F68 /* UIImage+Extension.h */,
+				77653B3A1E05278000BB4F68 /* UIImage+Extension.m */,
+				77653B3B1E05278000BB4F68 /* UIImage+Tint.h */,
+				77653B3C1E05278000BB4F68 /* UIImage+Tint.m */,
+				77653B3D1E05278000BB4F68 /* UILabel+Extension.h */,
+				77653B3E1E05278000BB4F68 /* UILabel+Extension.m */,
+				77653B3F1E05278000BB4F68 /* UIView+WP.h */,
+				77653B401E05278000BB4F68 /* UIView+WP.m */,
+				77653B411E05278000BB4F68 /* 汉字转拼音 */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		77653B411E05278000BB4F68 /* 汉字转拼音 */ = {
+			isa = PBXGroup;
+			children = (
+				77653B421E05278000BB4F68 /* NSObject+CZRuntime.h */,
+				77653B431E05278000BB4F68 /* NSObject+CZRuntime.m */,
+				77653B441E05278000BB4F68 /* NSString+pinyin.h */,
+				77653B451E05278000BB4F68 /* NSString+pinyin.m */,
+				77653B461E05278000BB4F68 /* Utils.h */,
+				77653B471E05278000BB4F68 /* Utils.m */,
+			);
+			path = "汉字转拼音";
+			sourceTree = "<group>";
+		};
+		A2BBDEF8286A8DA6EF08FCBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12EAF82B89FAA7F349A9CCB9 /* Pods-LittleBee.debug.xcconfig */,
+				414A76B7EB06D958658A3DCD /* Pods-LittleBee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C58F3ADC576CA74330BCBB57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B009E26CD8C10F760773E623 /* libPods-LittleBee.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77653AD31E05250200BB4F68 /* LittleBee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77653AEB1E05250200BB4F68 /* Build configuration list for PBXNativeTarget "LittleBee" */;
+			buildPhases = (
+				44D583DD5CF51A29D05BBC59 /* [CP] Check Pods Manifest.lock */,
+				77653AD01E05250200BB4F68 /* Sources */,
+				77653AD11E05250200BB4F68 /* Frameworks */,
+				77653AD21E05250200BB4F68 /* Resources */,
+				C4C978F0204C376490FBEEAA /* [CP] Embed Pods Frameworks */,
+				AD7EE040D63B9D33CB2487AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LittleBee;
+			productName = LittleBee;
+			productReference = 77653AD41E05250200BB4F68 /* LittleBee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77653ACC1E05250200BB4F68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = maoge;
+				TargetAttributes = {
+					77653AD31E05250200BB4F68 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 77653ACF1E05250200BB4F68 /* Build configuration list for PBXProject "LittleBee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77653ACB1E05250200BB4F68;
+			productRefGroup = 77653AD51E05250200BB4F68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77653AD31E05250200BB4F68 /* LittleBee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77653AD21E05250200BB4F68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77653AE71E05250200BB4F68 /* LaunchScreen.storyboard in Resources */,
+				77653AE41E05250200BB4F68 /* Assets.xcassets in Resources */,
+				77653B191E05272200BB4F68 /* province.plist in Resources */,
+				77653AE21E05250200BB4F68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44D583DD5CF51A29D05BBC59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD7EE040D63B9D33CB2487AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LittleBee/Pods-LittleBee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4C978F0204C376490FBEEAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LittleBee/Pods-LittleBee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77653AD01E05250200BB4F68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77653B521E05278000BB4F68 /* UILabel+Extension.m in Sources */,
+				77653B561E05278000BB4F68 /* Utils.m in Sources */,
+				77653B531E05278000BB4F68 /* UIView+WP.m in Sources */,
+				77653B4D1E05278000BB4F68 /* NSString+Path.m in Sources */,
+				77653B541E05278000BB4F68 /* NSObject+CZRuntime.m in Sources */,
+				77653B251E05272200BB4F68 /* NetWorkTool.m in Sources */,
+				77653B4C1E05278000BB4F68 /* NSString+Hash.m in Sources */,
+				77653ADF1E05250200BB4F68 /* ViewController.m in Sources */,
+				77653B491E05278000BB4F68 /* NSAttributedString+Extension.m in Sources */,
+				77653B181E05272200BB4F68 /* NotificationDefine.m in Sources */,
+				77653B551E05278000BB4F68 /* NSString+pinyin.m in Sources */,
+				77653B241E05272200BB4F68 /* NetWorkManager.m in Sources */,
+				77653B501E05278000BB4F68 /* UIImage+Extension.m in Sources */,
+				77653ADC1E05250200BB4F68 /* AppDelegate.m in Sources */,
+				77653B4B1E05278000BB4F68 /* NSString+Base64.m in Sources */,
+				77653B4F1E05278000BB4F68 /* UIColor+Addition.m in Sources */,
+				77653B481E05278000BB4F68 /* NSArray+Log.m in Sources */,
+				77653B4A1E05278000BB4F68 /* NSObject+JQRuntime.m in Sources */,
+				77653B511E05278000BB4F68 /* UIImage+Tint.m in Sources */,
+				77653B4E1E05278000BB4F68 /* NSString+Substring.m in Sources */,
+				77653B261E05272200BB4F68 /* ProgressManager.m in Sources */,
+				77653AD91E05250200BB4F68 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77653AE01E05250200BB4F68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77653AE11E05250200BB4F68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77653AE51E05250200BB4F68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77653AE61E05250200BB4F68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77653AE91E05250200BB4F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		77653AEA1E05250200BB4F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77653AEC1E05250200BB4F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12EAF82B89FAA7F349A9CCB9 /* Pods-LittleBee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "LittleBee/Little-PrefixHeader.pch";
+				INFOPLIST_FILE = LittleBee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.LittleBee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77653AED1E05250200BB4F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414A76B7EB06D958658A3DCD /* Pods-LittleBee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "LittleBee/Little-PrefixHeader.pch";
+				INFOPLIST_FILE = LittleBee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.LittleBee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77653ACF1E05250200BB4F68 /* Build configuration list for PBXProject "LittleBee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77653AE91E05250200BB4F68 /* Debug */,
+				77653AEA1E05250200BB4F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77653AEB1E05250200BB4F68 /* Build configuration list for PBXNativeTarget "LittleBee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77653AEC1E05250200BB4F68 /* Debug */,
+				77653AED1E05250200BB4F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77653ACC1E05250200BB4F68 /* Project object */;
+}

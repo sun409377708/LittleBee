@@ -1,0 +1,38 @@
+//
+//  Little-PrefixHeader.pch
+//  LittleBee
+//
+//  Created by maoge on 16/12/17.
+//  Copyright © 2016年 maoge. All rights reserved.
+//
+
+// 一定注意增加一个判断，判断是否是 OC 的代码
+#if __OBJC__
+
+//分类头文件
+#import "KYAdditions.h"
+
+//网络头文件
+#import "NetWorkDefine.h"
+#import "NetWorkManager.h"
+
+//通用头文件
+#import "CommonDefine.h"
+#import "NotificationDefine.h"
+
+//第三方
+#import <YYModel.h>
+
+#import <Masonry.h>
+
+
+/**
+ 调试的宏
+ */
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+#endif
