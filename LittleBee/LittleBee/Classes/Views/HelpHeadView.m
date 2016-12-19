@@ -9,12 +9,6 @@
 #import "HelpHeadView.h"
 #import "Question.h"
 
-@interface HelpHeadView ()
-
-
-
-@end
-
 @implementation HelpHeadView
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
@@ -45,12 +39,8 @@
 - (void)setIsSelected:(BOOL)isSelected {
     _isSelected = isSelected;
     
-    if (isSelected) {
-        _arrowImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_arrow_up_accessory"]];
-    }else {
-        _arrowImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_arrow_down_accessory"]];
+    _arrowImageView.image = isSelected ? [UIImage imageNamed:@"cell_arrow_up_accessory"] : [UIImage imageNamed:@"cell_arrow_down_accessory"];
 
-    }
 }
 
 - (void)setQuestion:(Question *)question {

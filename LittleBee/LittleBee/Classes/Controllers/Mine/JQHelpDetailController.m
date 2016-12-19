@@ -47,9 +47,8 @@ static NSString *questionCellId = @"questionCellId";
     self.navigationItem.title = @"常见问题";
     
     [self setTableView];
-//
     [self loadHelpData];
-    
+
 }
 
 - (void)loadHelpData {
