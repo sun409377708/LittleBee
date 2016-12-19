@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainTabController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
+    
+    MainTabController *tabVC = [[MainTabController alloc] init];
+    
+    _window.rootViewController = tabVC;
+    
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 

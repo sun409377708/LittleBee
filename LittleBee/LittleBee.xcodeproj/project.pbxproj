@@ -39,8 +39,15 @@
 		77653B651E059F0A00BB4F68 /* JQHelpDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B641E059F0A00BB4F68 /* JQHelpDetailController.m */; };
 		77653B691E061CF200BB4F68 /* HelpPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77653B681E061CF200BB4F68 /* HelpPlist.plist */; };
 		77653B6C1E061D0F00BB4F68 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B6B1E061D0F00BB4F68 /* Question.m */; };
-		77653B6F1E0623F700BB4F68 /* AnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B6E1E0623F700BB4F68 /* AnswerCell.m */; };
-		77653B721E062A4D00BB4F68 /* HelpHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B711E062A4D00BB4F68 /* HelpHeadView.m */; };
+		77653B781E07C52200BB4F68 /* AnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B751E07C52200BB4F68 /* AnswerCell.m */; };
+		77653B791E07C52200BB4F68 /* HelpHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B771E07C52200BB4F68 /* HelpHeadView.m */; };
+		77653B7E1E07F3AC00BB4F68 /* MainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B7D1E07F3AC00BB4F68 /* MainTabController.m */; };
+		77653B831E07F91100BB4F68 /* SelectedAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B821E07F91100BB4F68 /* SelectedAddressController.m */; };
+		77653B861E07FB2400BB4F68 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B851E07FB2400BB4F68 /* HomeViewController.m */; };
+		77653B891E07FB3E00BB4F68 /* FlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B881E07FB3E00BB4F68 /* FlashViewController.m */; };
+		77653B8C1E07FB6A00BB4F68 /* ShoppingCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B8B1E07FB6A00BB4F68 /* ShoppingCardController.m */; };
+		77653B8F1E07FB8300BB4F68 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B8E1E07FB8300BB4F68 /* MineViewController.m */; };
+		77653B921E07FC9500BB4F68 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B911E07FC9500BB4F68 /* MainNavController.m */; };
 		81171F236FB88B5F9D3D40A8 /* libPods-LittleBee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B009E26CD8C10F760773E623 /* libPods-LittleBee.a */; };
 /* End PBXBuildFile section */
 
@@ -111,10 +118,24 @@
 		77653B681E061CF200BB4F68 /* HelpPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HelpPlist.plist; sourceTree = "<group>"; };
 		77653B6A1E061D0F00BB4F68 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		77653B6B1E061D0F00BB4F68 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
-		77653B6D1E0623F700BB4F68 /* AnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerCell.h; sourceTree = "<group>"; };
-		77653B6E1E0623F700BB4F68 /* AnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerCell.m; sourceTree = "<group>"; };
-		77653B701E062A4D00BB4F68 /* HelpHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpHeadView.h; sourceTree = "<group>"; };
-		77653B711E062A4D00BB4F68 /* HelpHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpHeadView.m; sourceTree = "<group>"; };
+		77653B741E07C52200BB4F68 /* AnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerCell.h; sourceTree = "<group>"; };
+		77653B751E07C52200BB4F68 /* AnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerCell.m; sourceTree = "<group>"; };
+		77653B761E07C52200BB4F68 /* HelpHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpHeadView.h; sourceTree = "<group>"; };
+		77653B771E07C52200BB4F68 /* HelpHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpHeadView.m; sourceTree = "<group>"; };
+		77653B7C1E07F3AC00BB4F68 /* MainTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabController.h; sourceTree = "<group>"; };
+		77653B7D1E07F3AC00BB4F68 /* MainTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabController.m; sourceTree = "<group>"; };
+		77653B811E07F91100BB4F68 /* SelectedAddressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedAddressController.h; sourceTree = "<group>"; };
+		77653B821E07F91100BB4F68 /* SelectedAddressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedAddressController.m; sourceTree = "<group>"; };
+		77653B841E07FB2400BB4F68 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		77653B851E07FB2400BB4F68 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		77653B871E07FB3E00BB4F68 /* FlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashViewController.h; sourceTree = "<group>"; };
+		77653B881E07FB3E00BB4F68 /* FlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashViewController.m; sourceTree = "<group>"; };
+		77653B8A1E07FB6A00BB4F68 /* ShoppingCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCardController.h; sourceTree = "<group>"; };
+		77653B8B1E07FB6A00BB4F68 /* ShoppingCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCardController.m; sourceTree = "<group>"; };
+		77653B8D1E07FB8300BB4F68 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		77653B8E1E07FB8300BB4F68 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		77653B901E07FC9500BB4F68 /* MainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavController.h; sourceTree = "<group>"; };
+		77653B911E07FC9500BB4F68 /* MainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavController.m; sourceTree = "<group>"; };
 		B009E26CD8C10F760773E623 /* libPods-LittleBee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LittleBee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -200,7 +221,11 @@
 		77653AF31E05272200BB4F68 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				77653B7A1E07C97300BB4F68 /* Home */,
+				77653B7F1E07F84700BB4F68 /* Flash */,
+				77653B801E07F86400BB4F68 /* ShoppingCard */,
 				77653B5F1E059E5B00BB4F68 /* Mine */,
+				77653B7B1E07F2D900BB4F68 /* Main */,
 				77653B581E055C4A00BB4F68 /* Base */,
 			);
 			path = Controllers;
@@ -258,10 +283,7 @@
 		77653B171E05272200BB4F68 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				77653B6D1E0623F700BB4F68 /* AnswerCell.h */,
-				77653B6E1E0623F700BB4F68 /* AnswerCell.m */,
-				77653B701E062A4D00BB4F68 /* HelpHeadView.h */,
-				77653B711E062A4D00BB4F68 /* HelpHeadView.m */,
+				77653B731E07C4D400BB4F68 /* Mine */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,8 +352,61 @@
 			children = (
 				77653B631E059F0A00BB4F68 /* JQHelpDetailController.h */,
 				77653B641E059F0A00BB4F68 /* JQHelpDetailController.m */,
+				77653B8D1E07FB8300BB4F68 /* MineViewController.h */,
+				77653B8E1E07FB8300BB4F68 /* MineViewController.m */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		77653B731E07C4D400BB4F68 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				77653B741E07C52200BB4F68 /* AnswerCell.h */,
+				77653B751E07C52200BB4F68 /* AnswerCell.m */,
+				77653B761E07C52200BB4F68 /* HelpHeadView.h */,
+				77653B771E07C52200BB4F68 /* HelpHeadView.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		77653B7A1E07C97300BB4F68 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				77653B841E07FB2400BB4F68 /* HomeViewController.h */,
+				77653B851E07FB2400BB4F68 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		77653B7B1E07F2D900BB4F68 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				77653B7C1E07F3AC00BB4F68 /* MainTabController.h */,
+				77653B7D1E07F3AC00BB4F68 /* MainTabController.m */,
+				77653B811E07F91100BB4F68 /* SelectedAddressController.h */,
+				77653B821E07F91100BB4F68 /* SelectedAddressController.m */,
+				77653B901E07FC9500BB4F68 /* MainNavController.h */,
+				77653B911E07FC9500BB4F68 /* MainNavController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		77653B7F1E07F84700BB4F68 /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+				77653B871E07FB3E00BB4F68 /* FlashViewController.h */,
+				77653B881E07FB3E00BB4F68 /* FlashViewController.m */,
+			);
+			path = Flash;
+			sourceTree = "<group>";
+		};
+		77653B801E07F86400BB4F68 /* ShoppingCard */ = {
+			isa = PBXGroup;
+			children = (
+				77653B8A1E07FB6A00BB4F68 /* ShoppingCardController.h */,
+				77653B8B1E07FB6A00BB4F68 /* ShoppingCardController.m */,
+			);
+			name = ShoppingCard;
 			sourceTree = "<group>";
 		};
 		A2BBDEF8286A8DA6EF08FCBC /* Pods */ = {
@@ -475,27 +550,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77653B7E1E07F3AC00BB4F68 /* MainTabController.m in Sources */,
 				77653B621E059EAA00BB4F68 /* JQBaseViewController.m in Sources */,
 				77653B521E05278000BB4F68 /* UILabel+Extension.m in Sources */,
 				77653B561E05278000BB4F68 /* Utils.m in Sources */,
+				77653B921E07FC9500BB4F68 /* MainNavController.m in Sources */,
 				77653B531E05278000BB4F68 /* UIView+WP.m in Sources */,
 				77653B4D1E05278000BB4F68 /* NSString+Path.m in Sources */,
 				77653B5B1E055C7300BB4F68 /* JQTableView.m in Sources */,
 				77653B6C1E061D0F00BB4F68 /* Question.m in Sources */,
-				77653B6F1E0623F700BB4F68 /* AnswerCell.m in Sources */,
+				77653B781E07C52200BB4F68 /* AnswerCell.m in Sources */,
 				77653B541E05278000BB4F68 /* NSObject+CZRuntime.m in Sources */,
 				77653B251E05272200BB4F68 /* NetWorkTool.m in Sources */,
 				77653B4C1E05278000BB4F68 /* NSString+Hash.m in Sources */,
 				77653ADF1E05250200BB4F68 /* ViewController.m in Sources */,
 				77653B491E05278000BB4F68 /* NSAttributedString+Extension.m in Sources */,
+				77653B831E07F91100BB4F68 /* SelectedAddressController.m in Sources */,
 				77653B181E05272200BB4F68 /* NotificationDefine.m in Sources */,
-				77653B721E062A4D00BB4F68 /* HelpHeadView.m in Sources */,
+				77653B791E07C52200BB4F68 /* HelpHeadView.m in Sources */,
+				77653B8C1E07FB6A00BB4F68 /* ShoppingCardController.m in Sources */,
 				77653B551E05278000BB4F68 /* NSString+pinyin.m in Sources */,
 				77653B241E05272200BB4F68 /* NetWorkManager.m in Sources */,
 				77653B501E05278000BB4F68 /* UIImage+Extension.m in Sources */,
+				77653B891E07FB3E00BB4F68 /* FlashViewController.m in Sources */,
+				77653B8F1E07FB8300BB4F68 /* MineViewController.m in Sources */,
 				77653ADC1E05250200BB4F68 /* AppDelegate.m in Sources */,
 				77653B5E1E0565F700BB4F68 /* JQCollectionView.m in Sources */,
 				77653B4B1E05278000BB4F68 /* NSString+Base64.m in Sources */,
+				77653B861E07FB2400BB4F68 /* HomeViewController.m in Sources */,
 				77653B651E059F0A00BB4F68 /* JQHelpDetailController.m in Sources */,
 				77653B4F1E05278000BB4F68 /* UIColor+Addition.m in Sources */,
 				77653B481E05278000BB4F68 /* NSArray+Log.m in Sources */,
@@ -624,6 +706,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "LittleBee/Little-PrefixHeader.pch";
 				INFOPLIST_FILE = LittleBee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.LittleBee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -637,6 +720,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "LittleBee/Little-PrefixHeader.pch";
 				INFOPLIST_FILE = LittleBee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.LittleBee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
