@@ -33,6 +33,14 @@
 		77653B541E05278000BB4F68 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B431E05278000BB4F68 /* NSObject+CZRuntime.m */; };
 		77653B551E05278000BB4F68 /* NSString+pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B451E05278000BB4F68 /* NSString+pinyin.m */; };
 		77653B561E05278000BB4F68 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B471E05278000BB4F68 /* Utils.m */; };
+		77653B5B1E055C7300BB4F68 /* JQTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B5A1E055C7300BB4F68 /* JQTableView.m */; };
+		77653B5E1E0565F700BB4F68 /* JQCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B5D1E0565F700BB4F68 /* JQCollectionView.m */; };
+		77653B621E059EAA00BB4F68 /* JQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B611E059EAA00BB4F68 /* JQBaseViewController.m */; };
+		77653B651E059F0A00BB4F68 /* JQHelpDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B641E059F0A00BB4F68 /* JQHelpDetailController.m */; };
+		77653B691E061CF200BB4F68 /* HelpPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77653B681E061CF200BB4F68 /* HelpPlist.plist */; };
+		77653B6C1E061D0F00BB4F68 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B6B1E061D0F00BB4F68 /* Question.m */; };
+		77653B6F1E0623F700BB4F68 /* AnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B6E1E0623F700BB4F68 /* AnswerCell.m */; };
+		77653B721E062A4D00BB4F68 /* HelpHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B711E062A4D00BB4F68 /* HelpHeadView.m */; };
 		81171F236FB88B5F9D3D40A8 /* libPods-LittleBee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B009E26CD8C10F760773E623 /* libPods-LittleBee.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +100,21 @@
 		77653B461E05278000BB4F68 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		77653B471E05278000BB4F68 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		77653B571E0527A300BB4F68 /* Little-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Little-PrefixHeader.pch"; sourceTree = "<group>"; };
+		77653B591E055C7300BB4F68 /* JQTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQTableView.h; sourceTree = "<group>"; };
+		77653B5A1E055C7300BB4F68 /* JQTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQTableView.m; sourceTree = "<group>"; };
+		77653B5C1E0565F700BB4F68 /* JQCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQCollectionView.h; sourceTree = "<group>"; };
+		77653B5D1E0565F700BB4F68 /* JQCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQCollectionView.m; sourceTree = "<group>"; };
+		77653B601E059EAA00BB4F68 /* JQBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQBaseViewController.h; sourceTree = "<group>"; };
+		77653B611E059EAA00BB4F68 /* JQBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQBaseViewController.m; sourceTree = "<group>"; };
+		77653B631E059F0A00BB4F68 /* JQHelpDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQHelpDetailController.h; sourceTree = "<group>"; };
+		77653B641E059F0A00BB4F68 /* JQHelpDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQHelpDetailController.m; sourceTree = "<group>"; };
+		77653B681E061CF200BB4F68 /* HelpPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HelpPlist.plist; sourceTree = "<group>"; };
+		77653B6A1E061D0F00BB4F68 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		77653B6B1E061D0F00BB4F68 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		77653B6D1E0623F700BB4F68 /* AnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerCell.h; sourceTree = "<group>"; };
+		77653B6E1E0623F700BB4F68 /* AnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerCell.m; sourceTree = "<group>"; };
+		77653B701E062A4D00BB4F68 /* HelpHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpHeadView.h; sourceTree = "<group>"; };
+		77653B711E062A4D00BB4F68 /* HelpHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpHeadView.m; sourceTree = "<group>"; };
 		B009E26CD8C10F760773E623 /* libPods-LittleBee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LittleBee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -177,6 +200,8 @@
 		77653AF31E05272200BB4F68 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				77653B5F1E059E5B00BB4F68 /* Mine */,
+				77653B581E055C4A00BB4F68 /* Base */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +209,8 @@
 		77653AF41E05272200BB4F68 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				77653B6A1E061D0F00BB4F68 /* Question.h */,
+				77653B6B1E061D0F00BB4F68 /* Question.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				77653AF61E05272200BB4F68 /* province.plist */,
+				77653B681E061CF200BB4F68 /* HelpPlist.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -230,6 +258,10 @@
 		77653B171E05272200BB4F68 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				77653B6D1E0623F700BB4F68 /* AnswerCell.h */,
+				77653B6E1E0623F700BB4F68 /* AnswerCell.m */,
+				77653B701E062A4D00BB4F68 /* HelpHeadView.h */,
+				77653B711E062A4D00BB4F68 /* HelpHeadView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +310,28 @@
 				77653B471E05278000BB4F68 /* Utils.m */,
 			);
 			path = "汉字转拼音";
+			sourceTree = "<group>";
+		};
+		77653B581E055C4A00BB4F68 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				77653B591E055C7300BB4F68 /* JQTableView.h */,
+				77653B5A1E055C7300BB4F68 /* JQTableView.m */,
+				77653B5C1E0565F700BB4F68 /* JQCollectionView.h */,
+				77653B5D1E0565F700BB4F68 /* JQCollectionView.m */,
+				77653B601E059EAA00BB4F68 /* JQBaseViewController.h */,
+				77653B611E059EAA00BB4F68 /* JQBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		77653B5F1E059E5B00BB4F68 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				77653B631E059F0A00BB4F68 /* JQHelpDetailController.h */,
+				77653B641E059F0A00BB4F68 /* JQHelpDetailController.m */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		A2BBDEF8286A8DA6EF08FCBC /* Pods */ = {
@@ -358,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77653B691E061CF200BB4F68 /* HelpPlist.plist in Resources */,
 				77653AE71E05250200BB4F68 /* LaunchScreen.storyboard in Resources */,
 				77653AE41E05250200BB4F68 /* Assets.xcassets in Resources */,
 				77653B191E05272200BB4F68 /* province.plist in Resources */,
@@ -420,21 +475,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77653B621E059EAA00BB4F68 /* JQBaseViewController.m in Sources */,
 				77653B521E05278000BB4F68 /* UILabel+Extension.m in Sources */,
 				77653B561E05278000BB4F68 /* Utils.m in Sources */,
 				77653B531E05278000BB4F68 /* UIView+WP.m in Sources */,
 				77653B4D1E05278000BB4F68 /* NSString+Path.m in Sources */,
+				77653B5B1E055C7300BB4F68 /* JQTableView.m in Sources */,
+				77653B6C1E061D0F00BB4F68 /* Question.m in Sources */,
+				77653B6F1E0623F700BB4F68 /* AnswerCell.m in Sources */,
 				77653B541E05278000BB4F68 /* NSObject+CZRuntime.m in Sources */,
 				77653B251E05272200BB4F68 /* NetWorkTool.m in Sources */,
 				77653B4C1E05278000BB4F68 /* NSString+Hash.m in Sources */,
 				77653ADF1E05250200BB4F68 /* ViewController.m in Sources */,
 				77653B491E05278000BB4F68 /* NSAttributedString+Extension.m in Sources */,
 				77653B181E05272200BB4F68 /* NotificationDefine.m in Sources */,
+				77653B721E062A4D00BB4F68 /* HelpHeadView.m in Sources */,
 				77653B551E05278000BB4F68 /* NSString+pinyin.m in Sources */,
 				77653B241E05272200BB4F68 /* NetWorkManager.m in Sources */,
 				77653B501E05278000BB4F68 /* UIImage+Extension.m in Sources */,
 				77653ADC1E05250200BB4F68 /* AppDelegate.m in Sources */,
+				77653B5E1E0565F700BB4F68 /* JQCollectionView.m in Sources */,
 				77653B4B1E05278000BB4F68 /* NSString+Base64.m in Sources */,
+				77653B651E059F0A00BB4F68 /* JQHelpDetailController.m in Sources */,
 				77653B4F1E05278000BB4F68 /* UIColor+Addition.m in Sources */,
 				77653B481E05278000BB4F68 /* NSArray+Log.m in Sources */,
 				77653B4A1E05278000BB4F68 /* NSObject+JQRuntime.m in Sources */,

@@ -20,9 +20,10 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         //1.实例化
-        instance = [[NetWorkTool alloc] initWithSessionConfiguration:configuration];
+        NSURL *url = [NSURL URLWithString:kBaseUrl];
+
+        instance = [[NetWorkTool alloc] initWithBaseURL:url];
         
         //2.可接受格式
         instance.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
