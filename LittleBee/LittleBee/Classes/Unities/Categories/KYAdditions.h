@@ -16,4 +16,4 @@
 #import "NSObject+JQRuntime.h"
 #import "NSString+Substring.h"
 #import "UIImage+Tint.h"
-
+#import "UIView+WP.h"

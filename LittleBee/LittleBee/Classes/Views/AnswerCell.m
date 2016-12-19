@@ -42,11 +42,9 @@
         
         for (int j = 0; j < i; j++) {
             textY += [[question everyRowHeight][j] floatValue];
-            
-//            NSLog(@"++++++%f", textY);
         }
 
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, textY, SCREEN_WIDTH - 40, [[question everyRowHeight][i] floatValue])];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(kEdgeDistance, textY, SCREEN_WIDTH - kEdgeDistance * 2, [[question everyRowHeight][i] floatValue])];
         _titleLabel.text = question.texts[i];
         _titleLabel.numberOfLines = 0;
         _titleLabel.font = [UIFont systemFontOfSize:14];
@@ -57,7 +55,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.lineView.frame = CGRectMake(20, 0, self.bounds.size.width - 40, [UIScreen mainScreen].scale / 1.0);
+    self.lineView.frame = CGRectMake(kEdgeDistance, 0, self.width - kEdgeDistance * 2, 1.0 / [UIScreen mainScreen].scale);
 }
 
 @end

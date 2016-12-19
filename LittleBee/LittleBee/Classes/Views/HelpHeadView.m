@@ -29,7 +29,7 @@
         [self.contentView addGestureRecognizer:tap];
         
         _lineView = [[UIView alloc] init];
-        _lineView.backgroundColor = [UIColor blackColor];
+        _lineView.backgroundColor = [UIColor lightGrayColor];
         [self.contentView addSubview:_lineView];
     }
     
@@ -38,9 +38,11 @@
 
 - (void)setIsSelected:(BOOL)isSelected {
     _isSelected = isSelected;
-    
-    _arrowImageView.image = isSelected ? [UIImage imageNamed:@"cell_arrow_up_accessory"] : [UIImage imageNamed:@"cell_arrow_down_accessory"];
-
+        if (isSelected) {
+        _arrowImageView.transform = CGAffineTransformMakeRotation(M_PI);
+    }else  {
+        _arrowImageView.transform = CGAffineTransformIdentity;
+    }
 }
 
 - (void)setQuestion:(Question *)question {
@@ -52,11 +54,11 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    _questionLabel.frame = CGRectMake(20, 0, self.bounds.size.width - 20, self.bounds.size.height);
+    _questionLabel.frame = CGRectMake(kEdgeDistance, 0, self.width - kEdgeDistance, self.height);
     
-    _arrowImageView.frame = CGRectMake(self.bounds.size.width - 30, (self.bounds.size.height - _arrowImageView.bounds.size.height) * 0.5 , _arrowImageView.bounds.size.width, _arrowImageView.bounds.size.height);
-    
-    _lineView.frame = CGRectMake(0, 0, self.bounds.size.width, 1);
+    _arrowImageView.frame = CGRectMake(self.width - 30, (self.height - _arrowImageView.height) * 0.5 , _arrowImageView.width, _arrowImageView.height);
+    ;
+    _lineView.frame = CGRectMake(0, 0, self.width, 1);
 }
 
 - (void)headViewDidClick:(UITapGestureRecognizer *)recognizer {

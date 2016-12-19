@@ -26,7 +26,6 @@ static NSString *questionCellId = @"questionCellId";
 
 @property (nonatomic, strong) NSArray<Question *> *questions;
 
-
 @end
 
 @implementation JQHelpDetailController
@@ -71,8 +70,6 @@ static NSString *questionCellId = @"questionCellId";
     _questionTableView.dataSource = self;
     [_questionTableView registerClass:[HelpHeadView class] forHeaderFooterViewReuseIdentifier:questionHeaderId];
     _questionTableView.sectionHeaderHeight = 50;
-
-//    [_questionTableView registerClass:[AnswerCell class] forCellReuseIdentifier:questionCellId];
     
     [self.view addSubview:_questionTableView];
 }
@@ -93,7 +90,6 @@ static NSString *questionCellId = @"questionCellId";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    AnswerCell *cell = [tableView dequeueReusableCellWithIdentifier:questionCellId forIndexPath:indexPath];
     AnswerCell *cell = [[AnswerCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:questionCellId];
     
     cell.question = self.questions[indexPath.section];
@@ -123,6 +119,7 @@ static NSString *questionCellId = @"questionCellId";
     
     NSLog(@"headView.tag = %zd ~~~ _lastOpenIndex = %zd ~~~ _isOpenCell = %d", headView.tag, _lastOpenIndex, _isOpenCell);
     
+    //如果是第二次点击, 且点的是其他cell, 就获取当前headerView 然后移除上一个点击的cell
     if (_lastOpenIndex != -1 && _lastOpenIndex != headView.tag && _isOpenCell) {
         
         HelpHeadView *headerView = (HelpHeadView *)[self.questionTableView headerViewForSection:_lastOpenIndex];
@@ -135,6 +132,7 @@ static NSString *questionCellId = @"questionCellId";
         [self.questionTableView deleteRowsAtIndexPaths:@[deleteIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
     
+    //如果两次点击的同一个cell , 则直接移除当前的cell
     if (_lastOpenIndex == headView.tag && _isOpenCell) {
         
         NSIndexPath *deleteIndexPath = [NSIndexPath indexPathForRow:0 inSection:_lastOpenIndex];
@@ -144,6 +142,7 @@ static NSString *questionCellId = @"questionCellId";
         return;
     }
     
+    //点击cell, 绑定最后一次点击的cell, 然后插入cell
     self.lastOpenIndex = headView.tag;
     self.isOpenCell = YES;
     NSIndexPath *insertIndexPaths = [NSIndexPath indexPathForRow:0 inSection:headView.tag];

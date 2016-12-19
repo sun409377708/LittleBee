@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define kEdgeDistance 20
+
 @interface Question : NSObject
 
 @property (nonatomic, copy) NSString *title;
@@ -19,7 +21,5 @@
 @property (nonatomic, assign) CGFloat cellHeight;
 
 + (void)loadQuestions:(void(^)(NSArray <Question *>*))completion;
-
-+ (instancetype)questionWithDict:(NSDictionary *)dict;
 
 @end
