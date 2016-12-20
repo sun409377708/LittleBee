@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.navigationBar.barTintColor = [UIColor yellowColor];
+//    self.navigationBar.translucent = NO;
+
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

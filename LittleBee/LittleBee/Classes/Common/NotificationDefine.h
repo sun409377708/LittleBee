@@ -16,3 +16,5 @@
 //
 ////textview 文字改变
 //UIKIT_EXTERN NSString *kTextVIewChangeKey;
+
+extern NSString * const HomeHeadViewHeightDidChange;

@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "JQCollectionView.h"
+#import "HomeHeadView.h"
 
 const CGFloat HomeCollectionCellMargin = 10;
 
@@ -18,16 +19,40 @@ static NSString *collectionFooterId = @"collectionFooterId";
 
 @interface HomeViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
+@property (nonatomic, weak) JQCollectionView *collectionView;
+@property (nonatomic, weak) HomeHeadView *headView;
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self setCollectionViewUI];
+    [self addNotifications];
     
+    [self setCollectionViewUI];
+    [self setHomeHeadViewUI];
 }
+
+- (void)addNotifications {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(homeHeadViewHeightChange:) name:HomeHeadViewHeightDidChange object:nil];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark -
+#pragma mark Notification
+- (void)homeHeadViewHeightChange:(NSNotification *)noty {
+    CGFloat height = [noty.object floatValue];
+    
+    self.headView.frame = CGRectMake(0, 0, SCREEN_WIDTH, height);
+//    self.collectionView.contentInset = UIEdgeInsetsMake(height, 0, 0, 0);
+}
+
+#pragma mark -
+#pragma mark SetupUI
 
 - (void)setCollectionViewUI {
     
@@ -39,6 +64,7 @@ static NSString *collectionFooterId = @"collectionFooterId";
     
     //创建collectionView
     JQCollectionView *collectionView = [[JQCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+    _collectionView = collectionView;
     
     collectionView.backgroundColor = [UIColor orangeColor];
     collectionView.delegate = self;
@@ -47,7 +73,7 @@ static NSString *collectionFooterId = @"collectionFooterId";
     [self.view addSubview:collectionView];
     [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.view);
-        make.top.equalTo(self.mas_topLayoutGuide);
+        make.top.equalTo(self.view);
     }];
     
     [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:collectionCellId];
@@ -55,6 +81,12 @@ static NSString *collectionFooterId = @"collectionFooterId";
     [collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:collectionHeaderId];
     
     [collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:collectionFooterId];
+}
+
+- (void)setHomeHeadViewUI {
+    HomeHeadView *headView = [[HomeHeadView alloc] init];
+    _headView = headView;
+    [_collectionView addSubview:headView];
 }
 
 #pragma mark -
@@ -83,10 +115,13 @@ static NSString *collectionFooterId = @"collectionFooterId";
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:collectionHeaderId forIndexPath:indexPath];
         
+        
+        headerView.backgroundColor = [UIColor purpleColor];
         return headerView;
     }else {
         UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:collectionFooterId forIndexPath:indexPath];
         
+        footerView.backgroundColor = [UIColor redColor];
         return footerView;
     }
 }
@@ -104,6 +139,26 @@ static NSString *collectionFooterId = @"collectionFooterId";
     return itemSize;
 }
 
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    
+    if (section == 0) {
+        return  CGSizeMake(SCREEN_WIDTH, HomeCollectionCellMargin);
+    }else if (section == 1) {
+        return CGSizeMake(SCREEN_WIDTH, HomeCollectionCellMargin * 2);
+    }
+    return CGSizeZero;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
+    
+    if (section == 0) {
+        return  CGSizeMake(SCREEN_WIDTH, HomeCollectionCellMargin);
+    }else if (section == 1) {
+        return CGSizeMake(SCREEN_WIDTH, HomeCollectionCellMargin * 5);
+    }
+    return CGSizeZero;
+}
 
 
 
