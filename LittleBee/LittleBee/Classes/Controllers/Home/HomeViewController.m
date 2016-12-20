@@ -47,8 +47,9 @@ static NSString *collectionFooterId = @"collectionFooterId";
 - (void)homeHeadViewHeightChange:(NSNotification *)noty {
     CGFloat height = [noty.object floatValue];
     
-    self.headView.frame = CGRectMake(0, 0, SCREEN_WIDTH, height);
-//    self.collectionView.contentInset = UIEdgeInsetsMake(height, 0, 0, 0);
+    self.headView.frame = CGRectMake(0, -height, SCREEN_WIDTH, height);
+    self.collectionView.contentInset = UIEdgeInsetsMake(height, 0, 44, 0);
+    self.collectionView.contentOffset = CGPointMake(0, -height);
 }
 
 #pragma mark -
@@ -72,8 +73,7 @@ static NSString *collectionFooterId = @"collectionFooterId";
     
     [self.view addSubview:collectionView];
     [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.equalTo(self.view);
-        make.top.equalTo(self.view);
+        make.edges.equalTo(self.view);
     }];
     
     [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:collectionCellId];
@@ -105,7 +105,7 @@ static NSString *collectionFooterId = @"collectionFooterId";
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionCellId forIndexPath:indexPath];
     
-    cell.backgroundColor = RANDOMCOLOR;
+    cell.backgroundColor = [UIColor grayColor];
     
     return cell;
 }

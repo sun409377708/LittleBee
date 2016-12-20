@@ -7,6 +7,7 @@
 //
 
 #import "HotView.h"
+const CGFloat DefaultMargin = 10;
 
 @interface HotView()
 
@@ -64,22 +65,41 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+    NSInteger column = 4;
+
+    CGFloat iconW = (SCREEN_WIDTH - 2 * DefaultMargin) / column;
+    CGFloat iconH = iconW * 0.68 + 20;
     
-    CGSize screenSize = self.bounds.size;
-    
-    NSInteger count = _btnArray.count;
-    
-    CGFloat btnWidth = screenSize.width / count;
-    
-    CGFloat btnHeight = screenSize.height;
-    
-    for (NSInteger i = 0; i < count; i++) {
-        
+    for (int i = 0; i < _btnArray.count; i++) {
         UIButton *btn = _btnArray[i];
         
-        btn.frame = CGRectMake(i * btnWidth, 0, btnWidth, btnHeight);
+        // column row index
+        CGFloat row = i / column;
+        CGFloat col = i % column;
+        
+        CGFloat iconX = col * iconW + DefaultMargin;
+        CGFloat iconY = row * iconH;
+        
+        btn.frame = CGRectMake(iconX, iconY, iconW, iconH);
     }
+    self.bounds = CGRectMake(0, 0, SCREEN_WIDTH, (_btnArray.count/ column) * iconH);
+
     
+//    CGSize screenSize = self.bounds.size;
+//    
+//    NSInteger count = _btnArray.count;
+//    
+//    CGFloat btnWidth = screenSize.width / count;
+//    
+//    CGFloat btnHeight = screenSize.height;
+//    
+//    for (NSInteger i = 0; i < count; i++) {
+//        
+//        UIButton *btn = _btnArray[i];
+//        
+//        btn.frame = CGRectMake(i * btnWidth, 0, btnWidth, btnHeight);
+//    }
+//    
 }
 
 

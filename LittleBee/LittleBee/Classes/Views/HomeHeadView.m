@@ -27,16 +27,22 @@ NSString * const HomeHeadViewHeightDidChange = @"HomeHeadViewHeightDidChange";
     
     UIView *pageView = [[UIView alloc] initWithFrame:CGRectZero];
     _pageView = pageView;
-    [self addSubview:pageView];
+    pageView.backgroundColor = [UIColor magentaColor];
+
+#warning @[]
+    HotView *hotView = [[HotView alloc] initWithImages:@[] title:@[] placeHolder:[UIImage imageNamed:@"icon_icons_holder"]];
+    _hotView = hotView;
+    hotView.backgroundColor = [UIColor blueColor];
     
+    [self addSubview:pageView];
+    [self addSubview:hotView];
+
+    [pageView layoutIfNeeded];
+    [hotView layoutIfNeeded];
     [_pageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.top.equalTo(self);
         make.height.equalTo(self.mas_width).multipliedBy(0.31);
     }];
-    
-    HotView *hotView = [[HotView alloc] initWithImages:@[] title:@[] placeHolder:[UIImage imageNamed:@"icon_icons_holder"]];
-    _hotView = hotView;
-    [self addSubview:hotView];
     
     [hotView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.equalTo(self);

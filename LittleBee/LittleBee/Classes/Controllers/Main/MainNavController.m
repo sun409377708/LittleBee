@@ -18,7 +18,7 @@
     [super viewDidLoad];
 
     self.navigationBar.barTintColor = [UIColor yellowColor];
-//    self.navigationBar.translucent = NO;
+    self.navigationBar.translucent = NO;
 
 }
 
