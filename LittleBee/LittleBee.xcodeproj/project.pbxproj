@@ -283,6 +283,9 @@
 		77653B171E05272200BB4F68 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				77653B951E080C1300BB4F68 /* Home */,
+				77653B941E080C0900BB4F68 /* ShoppingCard */,
+				77653B931E080C0100BB4F68 /* Flash */,
 				77653B731E07C4D400BB4F68 /* Mine */,
 			);
 			path = Views;
@@ -407,6 +410,27 @@
 				77653B8B1E07FB6A00BB4F68 /* ShoppingCardController.m */,
 			);
 			name = ShoppingCard;
+			sourceTree = "<group>";
+		};
+		77653B931E080C0100BB4F68 /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Flash;
+			sourceTree = "<group>";
+		};
+		77653B941E080C0900BB4F68 /* ShoppingCard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ShoppingCard;
+			sourceTree = "<group>";
+		};
+		77653B951E080C1300BB4F68 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		A2BBDEF8286A8DA6EF08FCBC /* Pods */ = {

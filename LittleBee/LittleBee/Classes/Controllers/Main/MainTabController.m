@@ -29,7 +29,6 @@
     
     // 3. 赋值
     self.viewControllers = mutable;
-    
 }
 
 - (UIViewController *)addChildControllerWith:(NSString *)clsName title:(NSString *)title normalImage:(NSString *)normalImage {
