@@ -27,7 +27,7 @@ const CGFloat DefaultMargin = 10;
 
 - (void)setupUI {
     //添加4个按钮
-    NSInteger count = 4;
+    NSInteger count = 8;
     
     NSMutableArray *arrM = [NSMutableArray array];
     

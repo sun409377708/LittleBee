@@ -50,6 +50,7 @@
 		77653B921E07FC9500BB4F68 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77653B911E07FC9500BB4F68 /* MainNavController.m */; };
 		779C7D841E092822006A3C81 /* HomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C7D831E092822006A3C81 /* HomeHeadView.m */; };
 		779C7D871E093F04006A3C81 /* HotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C7D861E093F04006A3C81 /* HotView.m */; };
+		77AA7A071E0BF5A300A3D4F9 /* HeadResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AA7A061E0BF5A300A3D4F9 /* HeadResource.m */; };
 		81171F236FB88B5F9D3D40A8 /* libPods-LittleBee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B009E26CD8C10F760773E623 /* libPods-LittleBee.a */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,8 @@
 		779C7D831E092822006A3C81 /* HomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeadView.m; sourceTree = "<group>"; };
 		779C7D851E093F04006A3C81 /* HotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotView.h; sourceTree = "<group>"; };
 		779C7D861E093F04006A3C81 /* HotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotView.m; sourceTree = "<group>"; };
+		77AA7A051E0BF5A300A3D4F9 /* HeadResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadResource.h; sourceTree = "<group>"; };
+		77AA7A061E0BF5A300A3D4F9 /* HeadResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadResource.m; sourceTree = "<group>"; };
 		B009E26CD8C10F760773E623 /* libPods-LittleBee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LittleBee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -242,6 +245,8 @@
 			children = (
 				77653B6A1E061D0F00BB4F68 /* Question.h */,
 				77653B6B1E061D0F00BB4F68 /* Question.m */,
+				77AA7A051E0BF5A300A3D4F9 /* HeadResource.h */,
+				77AA7A061E0BF5A300A3D4F9 /* HeadResource.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -587,6 +592,7 @@
 				77653B7E1E07F3AC00BB4F68 /* MainTabController.m in Sources */,
 				77653B621E059EAA00BB4F68 /* JQBaseViewController.m in Sources */,
 				77653B521E05278000BB4F68 /* UILabel+Extension.m in Sources */,
+				77AA7A071E0BF5A300A3D4F9 /* HeadResource.m in Sources */,
 				77653B561E05278000BB4F68 /* Utils.m in Sources */,
 				77653B921E07FC9500BB4F68 /* MainNavController.m in Sources */,
 				77653B531E05278000BB4F68 /* UIView+WP.m in Sources */,

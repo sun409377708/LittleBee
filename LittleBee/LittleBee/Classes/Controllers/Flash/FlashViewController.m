@@ -8,8 +8,18 @@
 //
 
 #import "FlashViewController.h"
+#import "JQTableView.h"
 
-@interface FlashViewController ()
+static NSString *categoryCellId = @"categoryCellId";
+static NSString *listCellId = @"listCellId";
+
+static NSString *headId = @"headId";
+
+@interface FlashViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, weak) JQTableView *categoryView;
+
+@property (nonatomic, weak) JQTableView *listView;
 
 @end
 
@@ -17,22 +27,105 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self setupUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupUI {
+    
+    //左边分类view
+    JQTableView *categoryView = [[JQTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    categoryView.rowHeight = 55;
+    [self.view addSubview:categoryView];
+    
+    //右边细分view
+    JQTableView *listView = [[JQTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+
+    [self.view addSubview:listView];
+    
+    //约束
+    [categoryView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.top.bottom.equalTo(self.view);
+        make.width.mas_equalTo(86);
+    }];
+    
+    [listView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.right.top.bottom.equalTo(self.view);
+        make.left.equalTo(categoryView.mas_right);
+    }];
+    
+    //注册cell
+    [categoryView registerClass:[UITableViewCell class] forCellReuseIdentifier:categoryCellId];
+    [listView registerClass:[UITableViewCell class] forCellReuseIdentifier:listCellId];
+    [listView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:headId];
+    
+    //设置数据源代理
+    categoryView.delegate = self;
+    categoryView.dataSource = self;
+    listView.delegate = self;
+    listView.dataSource = self;
+    
+    listView.sectionHeaderHeight = 23;
+    listView.rowHeight = 140;
+    
+    _categoryView = categoryView;
+    _listView = listView;
+    
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark -
+#pragma mark dataSource method
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 2;
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (tableView == _categoryView) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:categoryCellId forIndexPath:indexPath];
+        
+        cell.backgroundColor = [UIColor grayColor];
+        cell.textLabel.text = @(indexPath.row).description;
+        return cell;
+    }else {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:listCellId forIndexPath:indexPath];
+        cell.backgroundColor = [UIColor yellowColor];
+        cell.textLabel.text = @(indexPath.row).description;
+
+    return cell;
+    }
+}
+
+#pragma mark -
+#pragma mark 返回组头view
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    if (tableView == _categoryView) {
+        return nil;
+    }
+    
+    UITableViewHeaderFooterView *headView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headId];
+    
+    UILabel *label = [UILabel labelWithTitle:@"haha" andColor:[UIColor blueColor] andFontSize:14];
+    
+    [headView.contentView addSubview:label];
+    
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(headView.contentView);
+        make.left.equalTo(headView.contentView).offset(8);
+    }];
+    
+    return headView;
+}
+
 
 @end

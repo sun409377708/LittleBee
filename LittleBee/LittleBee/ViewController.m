@@ -35,13 +35,7 @@
     [self.view addSubview:collection];
     
     
-//    JQTableView *table = [[JQTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-//    
-//    table.backgroundColor = [UIColor redColor];
-//    
-//    [self.view addSubview:table];
-    
-//    [self test10];
+    [self test4];
 }
 
 - (void)test10 {
@@ -99,6 +93,9 @@
     NSDictionary *paramDic = @{@"call" : @5};
     
     [self loadUrl:urlString params:paramDic];
+    
+    
+    
 }
 
 - (void)test3 {
@@ -131,7 +128,34 @@
     
     [[NetWorkTool shareManager] POST_RequestWithUrlString:urlString parmas:paramDic successBloock:^(id responseObject) {
         
-        NSLog(@"responseObject = %@",responseObject);
+//        NSLog(@"responseObject = %@",responseObject);
+        
+//        NSLog(@"%@", responseObject[@"data"]);
+        
+        NSDictionary *dict = responseObject[@"data"];
+        
+        NSArray *cateArray = dict[@"categories"];
+        
+        NSDictionary *dict2 = dict[@"products"];
+
+        NSMutableArray *arrM = [NSMutableArray array];
+        
+        for (NSDictionary *dict in cateArray) {
+            NSString *idstr = dict[@"id"];
+            
+            NSArray *array = dict2[idstr];
+            
+            [arrM addObject:array];
+        }
+        
+//        NSLog(@"%ld", arrM.count);
+        
+        
+        for (NSArray *arr in arrM) {
+            NSLog(@"%@", arr);
+        }
+        
+        
     } failureBlock:^(NSError *error) {
         
         NSLog(@"错误%@", error);

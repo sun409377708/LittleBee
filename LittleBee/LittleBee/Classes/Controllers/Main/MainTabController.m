@@ -8,8 +8,10 @@
 
 #import "MainTabController.h"
 #import "MainNavController.h"
+#import "ShoppingCardController.h"
+#import "AppDelegate.h"
 
-@interface MainTabController ()
+@interface MainTabController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -17,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.delegate = self;
     // 1. 实例化一个可变数组
     NSMutableArray *mutable = [NSMutableArray array];
     
@@ -60,7 +62,23 @@
     MainNavController *nav = [[MainNavController alloc] initWithRootViewController:controller];
     
     return nav;
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
     
+    MainNavController *tempNav = (MainNavController *)viewController;
+    
+    if ([tempNav.viewControllers[0] isKindOfClass:[ShoppingCardController class]]   ) {
+                
+        ShoppingCardController *shop = [[ShoppingCardController alloc] init];
+        MainNavController *nav = [[MainNavController alloc] initWithRootViewController:shop];
+        nav.navigationBar.barTintColor = [UIColor whiteColor];
+        AppDelegate *delegate1 = (AppDelegate*)([UIApplication sharedApplication].delegate);
+        
+        [delegate1.window.rootViewController presentViewController:nav animated:YES completion:nil];
+        return NO;
+    }
+    return YES;
 }
 
 @end
