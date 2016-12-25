@@ -11,6 +11,9 @@
 #import "JQTableView.h"
 #import "JQCollectionView.h"
 #import "JQHelpDetailController.h"
+#import "SuperMarketData.h"
+#import "ProductCategory.h"
+#import "Goods.h"
 
 @interface ViewController ()
 
@@ -28,14 +31,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+//    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+//    
+//    JQCollectionView *collection = [[JQCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+//    collection.backgroundColor = [UIColor orangeColor];
+//    [self.view addSubview:collection];
     
-    JQCollectionView *collection = [[JQCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
-    collection.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:collection];
     
+    [self test8];
     
-    [self test4];
 }
 
 - (void)test10 {
@@ -130,30 +134,36 @@
         
 //        NSLog(@"responseObject = %@",responseObject);
         
-//        NSLog(@"%@", responseObject[@"data"]);
+        NSLog(@"%@", responseObject[@"data"]);
         
-        NSDictionary *dict = responseObject[@"data"];
+        NSArray *array = responseObject[@"data"];
         
-        NSArray *cateArray = dict[@"categories"];
-        
-        NSDictionary *dict2 = dict[@"products"];
-
-        NSMutableArray *arrM = [NSMutableArray array];
-        
-        for (NSDictionary *dict in cateArray) {
-            NSString *idstr = dict[@"id"];
+        for (NSDictionary *dict in array) {
             
-            NSArray *array = dict2[idstr];
-            
-            [arrM addObject:array];
         }
         
+//        NSDictionary *dict = responseObject[@"data"];
+//        
+//        NSArray *cateArray = dict[@"categories"];
+//        
+//        NSDictionary *dict2 = dict[@"products"];
+//
+//        NSMutableArray *arrM = [NSMutableArray array];
+//        
+//        for (NSDictionary *dict in cateArray) {
+//            NSString *idstr = dict[@"id"];
+//            
+//            NSArray *array = dict2[idstr];
+//            
+//            [arrM addObject:array];
+//        }
+//        
 //        NSLog(@"%ld", arrM.count);
         
         
-        for (NSArray *arr in arrM) {
-            NSLog(@"%@", arr);
-        }
+//        for (NSArray *arr in arrM) {
+//            NSLog(@"%@", arr);
+//        }
         
         
     } failureBlock:^(NSError *error) {

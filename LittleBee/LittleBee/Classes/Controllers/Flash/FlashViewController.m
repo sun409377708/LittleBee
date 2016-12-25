@@ -9,6 +9,7 @@
 
 #import "FlashViewController.h"
 #import "JQTableView.h"
+#import "SuperMarketData.h"
 
 static NSString *categoryCellId = @"categoryCellId";
 static NSString *listCellId = @"listCellId";
@@ -29,6 +30,15 @@ static NSString *headId = @"headId";
     [super viewDidLoad];
 
     [self setupUI];
+    
+    [self loadData];
+}
+
+- (void)loadData {
+    
+    [SuperMarketData loadSuperMarketData:^(id data, NSError *error) {
+        
+    }];
 }
 
 - (void)setupUI {

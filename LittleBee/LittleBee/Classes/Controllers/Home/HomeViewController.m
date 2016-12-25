@@ -9,6 +9,8 @@
 #import "HomeViewController.h"
 #import "JQCollectionView.h"
 #import "HomeHeadView.h"
+#import <MJRefresh/MJRefresh.h>
+#import "RefreshHeader.h"
 
 const CGFloat HomeCollectionCellMargin = 10;
 
@@ -46,6 +48,7 @@ static NSString *collectionFooterId = @"collectionFooterId";
 #pragma mark Notification
 - (void)homeHeadViewHeightChange:(NSNotification *)noty {
     CGFloat height = [noty.object floatValue];
+    self.collectionView.mj_header.ignoredScrollViewContentInsetTop = height;
     
     self.headView.frame = CGRectMake(0, -height, SCREEN_WIDTH, height);
     self.collectionView.contentInset = UIEdgeInsetsMake(height, 0, 44, 0);
@@ -81,6 +84,19 @@ static NSString *collectionFooterId = @"collectionFooterId";
     [collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:collectionHeaderId];
     
     [collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:collectionFooterId];
+    
+    //刷新控件
+    RefreshHeader *redView = [RefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(headRefresh)];
+    redView.gifView.frame = CGRectMake(0, 30, 100, 100);
+    collectionView.mj_header = redView;
+    
+}
+
+- (void)headRefresh {
+    NSLog(@"刷新啦");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.collectionView.mj_header  endRefreshing];
+    });
 }
 
 - (void)setHomeHeadViewUI {

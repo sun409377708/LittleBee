@@ -51,6 +51,10 @@
 		779C7D841E092822006A3C81 /* HomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C7D831E092822006A3C81 /* HomeHeadView.m */; };
 		779C7D871E093F04006A3C81 /* HotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779C7D861E093F04006A3C81 /* HotView.m */; };
 		77AA7A071E0BF5A300A3D4F9 /* HeadResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AA7A061E0BF5A300A3D4F9 /* HeadResource.m */; };
+		77AA7A0A1E0D395000A3D4F9 /* RefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AA7A091E0D395000A3D4F9 /* RefreshHeader.m */; };
+		77AA7A101E0E202A00A3D4F9 /* SuperMarketData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AA7A0F1E0E202A00A3D4F9 /* SuperMarketData.m */; };
+		77AA7A131E0E21C300A3D4F9 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AA7A121E0E21C300A3D4F9 /* ProductCategory.m */; };
+		77AA7A161E0E52A900A3D4F9 /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AA7A151E0E52A900A3D4F9 /* Goods.m */; };
 		81171F236FB88B5F9D3D40A8 /* libPods-LittleBee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B009E26CD8C10F760773E623 /* libPods-LittleBee.a */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +149,14 @@
 		779C7D861E093F04006A3C81 /* HotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotView.m; sourceTree = "<group>"; };
 		77AA7A051E0BF5A300A3D4F9 /* HeadResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadResource.h; sourceTree = "<group>"; };
 		77AA7A061E0BF5A300A3D4F9 /* HeadResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadResource.m; sourceTree = "<group>"; };
+		77AA7A081E0D395000A3D4F9 /* RefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshHeader.h; sourceTree = "<group>"; };
+		77AA7A091E0D395000A3D4F9 /* RefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshHeader.m; sourceTree = "<group>"; };
+		77AA7A0E1E0E202A00A3D4F9 /* SuperMarketData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperMarketData.h; sourceTree = "<group>"; };
+		77AA7A0F1E0E202A00A3D4F9 /* SuperMarketData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperMarketData.m; sourceTree = "<group>"; };
+		77AA7A111E0E21C300A3D4F9 /* ProductCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCategory.h; sourceTree = "<group>"; };
+		77AA7A121E0E21C300A3D4F9 /* ProductCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCategory.m; sourceTree = "<group>"; };
+		77AA7A141E0E52A900A3D4F9 /* Goods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goods.h; sourceTree = "<group>"; };
+		77AA7A151E0E52A900A3D4F9 /* Goods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goods.m; sourceTree = "<group>"; };
 		B009E26CD8C10F760773E623 /* libPods-LittleBee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LittleBee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -247,6 +259,12 @@
 				77653B6B1E061D0F00BB4F68 /* Question.m */,
 				77AA7A051E0BF5A300A3D4F9 /* HeadResource.h */,
 				77AA7A061E0BF5A300A3D4F9 /* HeadResource.m */,
+				77AA7A0E1E0E202A00A3D4F9 /* SuperMarketData.h */,
+				77AA7A0F1E0E202A00A3D4F9 /* SuperMarketData.m */,
+				77AA7A111E0E21C300A3D4F9 /* ProductCategory.h */,
+				77AA7A121E0E21C300A3D4F9 /* ProductCategory.m */,
+				77AA7A141E0E52A900A3D4F9 /* Goods.h */,
+				77AA7A151E0E52A900A3D4F9 /* Goods.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,8 +313,8 @@
 			isa = PBXGroup;
 			children = (
 				77653B951E080C1300BB4F68 /* Home */,
-				77653B941E080C0900BB4F68 /* ShoppingCard */,
 				77653B931E080C0100BB4F68 /* Flash */,
+				77653B941E080C0900BB4F68 /* ShoppingCard */,
 				77653B731E07C4D400BB4F68 /* Mine */,
 			);
 			path = Views;
@@ -444,6 +462,8 @@
 				779C7D831E092822006A3C81 /* HomeHeadView.m */,
 				779C7D851E093F04006A3C81 /* HotView.h */,
 				779C7D861E093F04006A3C81 /* HotView.m */,
+				77AA7A081E0D395000A3D4F9 /* RefreshHeader.h */,
+				77AA7A091E0D395000A3D4F9 /* RefreshHeader.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -589,6 +609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77AA7A161E0E52A900A3D4F9 /* Goods.m in Sources */,
 				77653B7E1E07F3AC00BB4F68 /* MainTabController.m in Sources */,
 				77653B621E059EAA00BB4F68 /* JQBaseViewController.m in Sources */,
 				77653B521E05278000BB4F68 /* UILabel+Extension.m in Sources */,
@@ -602,11 +623,13 @@
 				77653B781E07C52200BB4F68 /* AnswerCell.m in Sources */,
 				77653B541E05278000BB4F68 /* NSObject+CZRuntime.m in Sources */,
 				77653B251E05272200BB4F68 /* NetWorkTool.m in Sources */,
+				77AA7A131E0E21C300A3D4F9 /* ProductCategory.m in Sources */,
 				77653B4C1E05278000BB4F68 /* NSString+Hash.m in Sources */,
 				77653ADF1E05250200BB4F68 /* ViewController.m in Sources */,
 				77653B491E05278000BB4F68 /* NSAttributedString+Extension.m in Sources */,
 				77653B831E07F91100BB4F68 /* SelectedAddressController.m in Sources */,
 				77653B181E05272200BB4F68 /* NotificationDefine.m in Sources */,
+				77AA7A0A1E0D395000A3D4F9 /* RefreshHeader.m in Sources */,
 				779C7D841E092822006A3C81 /* HomeHeadView.m in Sources */,
 				77653B791E07C52200BB4F68 /* HelpHeadView.m in Sources */,
 				77653B8C1E07FB6A00BB4F68 /* ShoppingCardController.m in Sources */,
@@ -619,6 +642,7 @@
 				77653ADC1E05250200BB4F68 /* AppDelegate.m in Sources */,
 				77653B5E1E0565F700BB4F68 /* JQCollectionView.m in Sources */,
 				77653B4B1E05278000BB4F68 /* NSString+Base64.m in Sources */,
+				77AA7A101E0E202A00A3D4F9 /* SuperMarketData.m in Sources */,
 				77653B861E07FB2400BB4F68 /* HomeViewController.m in Sources */,
 				77653B651E059F0A00BB4F68 /* JQHelpDetailController.m in Sources */,
 				77653B4F1E05278000BB4F68 /* UIColor+Addition.m in Sources */,

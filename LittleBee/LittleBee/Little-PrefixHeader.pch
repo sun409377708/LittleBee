@@ -15,6 +15,7 @@
 //网络头文件
 #import "NetWorkDefine.h"
 #import "NetWorkManager.h"
+#import "NetWorkTool.h"
 
 //通用头文件
 #import "CommonDefine.h"
